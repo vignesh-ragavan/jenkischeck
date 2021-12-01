@@ -13,6 +13,7 @@ Test Setup        Go To Login Page
 Test Template     Login With Invalid Credentials Should Fail
 Resource          resource.robot
 
+*** Test Cases ***
 Login With Invalid Credentials Should Fail
     [Arguments]    ${username}    ${password}
     Input Username    ${username}
