@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211130 08:21:28.151" rpa="false" schemaversion="2">
+<suite id="s1" name="Login Tests" source="C:\Users\vigne\Downloads\WebDemo-master\WebDemo-master\login_tests">
+<suite id="s1-s1" name="Gherkin Login" source="C:\Users\vigne\Downloads\WebDemo-master\WebDemo-master\login_tests\gherkin_login.robot">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Given browser is opened to login page">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211130 08:21:28.474" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<msg timestamp="20211130 08:21:28.478" level="INFO">Firefox driver log is always forced to to: C:\Users\vigne\Downloads\WebDemo-master\WebDemo-master\geckodriver-61.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211130 08:21:28.496" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211130 08:21:28.496" endtime="20211130 08:21:28.496"/>
+</kw>
+<msg timestamp="20211130 08:21:28.500" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20211130 08:21:28.473" endtime="20211130 08:21:28.500"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20211130 08:21:28.500" endtime="20211130 08:21:28.500"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20211130 08:21:28.500" endtime="20211130 08:21:28.500"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211130 08:21:28.500" endtime="20211130 08:21:28.500"/>
+</kw>
+<status status="FAIL" starttime="20211130 08:21:28.473" endtime="20211130 08:21:28.501"/>
+</kw>
+<status status="FAIL" starttime="20211130 08:21:28.473" endtime="20211130 08:21:28.502"/>
+</kw>
+<kw name="When user &quot;demo&quot; logs in with password &quot;mode&quot;" sourcename="User &quot;${username}&quot; logs in with password &quot;${password}&quot;">
+<status status="NOT RUN" starttime="20211130 08:21:28.503" endtime="20211130 08:21:28.503"/>
+</kw>
+<kw name="Then welcome page should be open" library="resource">
+<status status="NOT RUN" starttime="20211130 08:21:28.503" endtime="20211130 08:21:28.503"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211130 08:21:28.504" endtime="20211130 08:21:28.504"/>
+</kw>
+<status status="FAIL" starttime="20211130 08:21:28.472" endtime="20211130 08:21:28.504">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="FAIL" starttime="20211130 08:21:28.188" endtime="20211130 08:21:28.506"/>
+</suite>
+<suite id="s1-s2" name="Invalid Login" source="C:\Users\vigne\Downloads\WebDemo-master\WebDemo-master\login_tests\invalid_login.robot">
+<kw name="Open Browser To Login Page" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211130 08:21:28.514" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<msg timestamp="20211130 08:21:28.517" level="INFO">Firefox driver log is always forced to to: C:\Users\vigne\Downloads\WebDemo-master\WebDemo-master\geckodriver-62.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211130 08:21:28.522" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211130 08:21:28.522" endtime="20211130 08:21:28.522"/>
+</kw>
+<msg timestamp="20211130 08:21:28.524" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20211130 08:21:28.513" endtime="20211130 08:21:28.524"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20211130 08:21:28.524" endtime="20211130 08:21:28.524"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20211130 08:21:28.524" endtime="20211130 08:21:28.524"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211130 08:21:28.525" endtime="20211130 08:21:28.525"/>
+</kw>
+<status status="FAIL" starttime="20211130 08:21:28.513" endtime="20211130 08:21:28.525"/>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<status status="FAIL" starttime="20211130 08:21:28.525" endtime="20211130 08:21:28.526">Parent suite setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<status status="FAIL" starttime="20211130 08:21:28.527" endtime="20211130 08:21:28.528">Parent suite setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<status status="FAIL" starttime="20211130 08:21:28.529" endtime="20211130 08:21:28.530">Parent suite setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<status status="FAIL" starttime="20211130 08:21:28.531" endtime="20211130 08:21:28.531">Parent suite setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<status status="FAIL" starttime="20211130 08:21:28.532" endtime="20211130 08:21:28.533">Parent suite setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<status status="FAIL" starttime="20211130 08:21:28.534" endtime="20211130 08:21:28.535">Parent suite setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211130 08:21:28.536" endtime="20211130 08:21:28.536"/>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" starttime="20211130 08:21:28.508" endtime="20211130 08:21:28.536">Suite setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</suite>
+<suite id="s1-s3" name="Valid Login" source="C:\Users\vigne\Downloads\WebDemo-master\WebDemo-master\login_tests\valid_login.robot">
+<test id="s1-s3-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211130 08:21:28.548" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<msg timestamp="20211130 08:21:28.551" level="INFO">Firefox driver log is always forced to to: C:\Users\vigne\Downloads\WebDemo-master\WebDemo-master\geckodriver-63.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211130 08:21:28.557" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211130 08:21:28.557" endtime="20211130 08:21:28.557"/>
+</kw>
+<msg timestamp="20211130 08:21:28.558" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20211130 08:21:28.547" endtime="20211130 08:21:28.558"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20211130 08:21:28.559" endtime="20211130 08:21:28.559"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20211130 08:21:28.559" endtime="20211130 08:21:28.559"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211130 08:21:28.559" endtime="20211130 08:21:28.559"/>
+</kw>
+<status status="FAIL" starttime="20211130 08:21:28.547" endtime="20211130 08:21:28.559"/>
+</kw>
+<kw name="Input Username" library="resource">
+<arg>demo</arg>
+<status status="NOT RUN" starttime="20211130 08:21:28.560" endtime="20211130 08:21:28.560"/>
+</kw>
+<kw name="Input Password" library="resource">
+<arg>mode</arg>
+<status status="NOT RUN" starttime="20211130 08:21:28.560" endtime="20211130 08:21:28.560"/>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<status status="NOT RUN" starttime="20211130 08:21:28.560" endtime="20211130 08:21:28.560"/>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211130 08:21:28.561" endtime="20211130 08:21:28.561"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211130 08:21:28.561" endtime="20211130 08:21:28.561"/>
+</kw>
+<status status="FAIL" starttime="20211130 08:21:28.546" endtime="20211130 08:21:28.561">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" starttime="20211130 08:21:28.540" endtime="20211130 08:21:28.562"/>
+</suite>
+<status status="FAIL" starttime="20211130 08:21:28.153" endtime="20211130 08:21:28.564"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="Login Tests">Login Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Gherkin Login">Login Tests.Gherkin Login</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s2" name="Invalid Login">Login Tests.Invalid Login</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="Valid Login">Login Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
