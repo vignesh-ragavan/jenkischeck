@@ -5,7 +5,7 @@ Documentation     A test suite with a single test for valid login.
 ...               the imported resource file.
 Resource          resource.robot
 
-    
+  *** Test Cases ***  
 sum of variables
   ${calculatedTotalPrice} =    set variable    ${42.42}
   ${productPrice1} =    set variable    ${43.15}
