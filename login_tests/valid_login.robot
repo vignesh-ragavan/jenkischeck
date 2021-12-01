@@ -4,7 +4,7 @@ Library     SeleniumLibrary
 
 *** Variables ***
 ${variable 1}      ttt
-${variable 2}      ttt
+${variable 2}      tt
 ${variable 3}      ttt
 
 *** Test Cases ***
