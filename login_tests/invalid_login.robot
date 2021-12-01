@@ -1,26 +1,16 @@
 *** Settings ***
-Documentation     A test suite containing tests related to invalid login.
-...
-...               These tests are data-driven by their nature. They use a single
-...               keyword, specified with Test Template setting, that is called
-...               with different arguments to cover different scenarios.
-...
-...               This suite also demonstrates using setups and teardowns in
-...               different levels.
-Suite Setup       Open Browser To Login Page
-Suite Teardown    Close Browser
-Test Setup        Go To Login Page
-Test Template     Login With Invalid Credentials Should Fail
-Resource          resource.robot
+Documentation   Test Demonstration
+Library     SeleniumLibrary
+
+*** Variables ***
+${variable 1}      ttt
+${variable 2}      ttt
+${variable 3}      ttt
 
 *** Test Cases ***
-Login With Invalid Credentials Should Fail
-    [Arguments]    ${username}    ${password}
-    Input Username    ${username}
-    Input Password    ${password}
-    Submit Credentials
-    Login Should Have Failed
 
-Login Should Have Failed
-    Location Should Be    ${ERROR URL}
-    Title Should Be    Error Page
+Display iPhone Search Results
+   Should Be True     """${variable 1}""".lower() == """${variable 2}""".lower()
+
+Display iPhone Search Result2
+   Should Be True     """${variable 2}""".lower() == """${variable 3}""".lower()
