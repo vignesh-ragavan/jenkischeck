@@ -3,7 +3,7 @@ Documentation   Test Demonstration
 Library     SeleniumLibrary
 
 *** Variables ***
-${variable 1}      tt
+${variable 1}      ttt
 ${variable 2}      ttt
 ${variable 3}      ttt
 
